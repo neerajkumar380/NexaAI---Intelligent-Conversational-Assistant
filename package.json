@@ -1,0 +1,49 @@
+{
+  "name": "ai-chatbot-backend",
+  "version": "1.0.0",
+  "description": "Human-like conversational AI chatbot with memory and personalization",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "client:build": "cd client && npm run build",
+    "client:install": "cd client && npm install",
+    "heroku-postbuild": "npm run client:install && npm run client:build",
+    "install:all": "npm install && npm run client:install",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.7.2",
+    "redis": "^4.6.7",
+    "uuid": "^9.0.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "conversational-ai",
+    "mern",
+    "gemini",
+    "memory",
+    "personalization"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
