@@ -6,8 +6,7 @@
 
 A sophisticated conversational AI chatbot built with the **MERN stack**, featuring **personalized memory**, **emotional intelligence**, and **contextual awareness**. Perfect for the STAN Internship Challenge!
 
-## ✨ **Live Demo**
-🔗 **[Try it here](https://your-demo-link.com)**
+
 
 ## 🎯 **Key Features**
 
